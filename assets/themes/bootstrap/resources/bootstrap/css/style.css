@@ -46,7 +46,7 @@ h3 {
     padding: 15px 15px;
     font-size: 18px;
     line-height: 20px;
-	color: #5e5e5e;
+	color: #3c4948;
 	font-family: "Alef Hebrew",
            “Helvetica Neue”,
             Helvetica,
@@ -55,7 +55,7 @@ h3 {
 }
 
 .navbar-header {
-    float: right;
+    float: right;	
 }
 
 .page-header {
