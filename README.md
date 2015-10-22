@@ -1,3 +1,6 @@
+New blog for [oBudget.org](http://oBudget.org)
+preview it here: [paperboydesignlab.github.io](http://paperboydesignlab.github.io)
+
 # Jekyll-Bootstrap-3
 
 Easily publish Bootstrap 3 powered Jekyll sites.  
