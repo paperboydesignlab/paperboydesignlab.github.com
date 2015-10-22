@@ -1,4 +1,5 @@
 /* Custom container */
+/* asd*/
 .container-narrow {
   margin: 0 auto;
   max-width: 700px; }
@@ -6,26 +7,7 @@
 .container-narrow > hr {
   margin: 30px 0; }
 
-@import url(http://fonts.googleapis.com/earlyaccess/alefhebrew.css);
- 
-.navbar-brand {
-    float: left;
-    padding: 15px 15px;
-    font-size: 118px;
-    line-height: 20px;
-}
- 
-
- h2 {
-    display: block;
-    font-size: 3.5em;
-    -webkit-margin-before: 0.83em;
-    -webkit-margin-after: 0.83em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    font-weight: bold;
-}
-  .navbar .nav {
+.navbar .nav {
   float: right; }
 
 /* posts index */
