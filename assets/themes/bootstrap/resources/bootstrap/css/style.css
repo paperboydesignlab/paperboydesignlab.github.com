@@ -24,6 +24,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     color: inherit;
 }
 
+h1 {
+	color: #ccc;
+}
+
+
 h3 {
     display: block;
     font-size: 21px;
@@ -35,6 +40,9 @@ h3 {
 	color: #3c4948;
 }
 
+h1 small {
+	color: #ccc;
+}
 
 .navbar-default {
     background-color: #f8f8f8;
