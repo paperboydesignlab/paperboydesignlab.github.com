@@ -42,8 +42,8 @@ body{
 }
 
 container {
-	max-width:700 px;
-	min width:500 px;
+	max-width:500 px;
+	min-width:300 px;
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
