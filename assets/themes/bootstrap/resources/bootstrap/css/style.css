@@ -41,9 +41,8 @@ body{
     background-color: #fff;
 }
 
-container {
-	max-width:500 px;
-	min-width:300 px;
+.container {
+	width:700 px;
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
