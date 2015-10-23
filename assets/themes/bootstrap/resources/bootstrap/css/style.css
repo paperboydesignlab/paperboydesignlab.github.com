@@ -40,7 +40,7 @@ body{
     color: #3c4948;
     background-color: #fff;
 }
-div.contrainer{
+div {
 	@media (min-width: 1200px)
 	.container {
     	width: 700px;
