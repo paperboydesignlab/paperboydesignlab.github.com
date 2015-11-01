@@ -8,7 +8,7 @@ tags:
   - jekyll
   - tutorial
 title: נסיון שני
-published: true
+published: false
 ---
 
 {% include JB/setup %}
