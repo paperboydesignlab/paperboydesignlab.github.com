@@ -1,6 +1,6 @@
 ---
 layout: page
-title: מפתח התקציב
+title: בלוג מפתח התקציב
 tagline: פוסטים אחרונים
 ---
 
@@ -13,4 +13,3 @@ tagline: פוסטים אחרונים
     </li>
   {% endfor %}
 </ul>
-
