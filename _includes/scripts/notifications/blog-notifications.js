@@ -20,7 +20,7 @@ unsubscribed = function() {
 }
 subscribe = function() {
     window.hn.subscribe(
-             "http://blog.obudget.org/atom.xml",
+             "http://blog.obudget.org/rss.xml",
              null,
              null,
              null,
@@ -34,7 +34,7 @@ subscribe = function() {
 }
 check_issubscribed = function() {
       window.hn.issubscribed(
-               "http://blog.obudget.org/atom.xml",
+               "http://blog.obudget.org/rss.xml",
                null,
                null,
                function( result, key ) {
