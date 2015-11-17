@@ -10,19 +10,29 @@
     <div class="content">
       {{ content }}
     </div>
-    
-<div class="share-page">
-    <br> -
-    <b>
-    שתף: &rarr; 
-    //
-    <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a>
-    //
-    <a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a>
-    //
-    <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Google+">Google+</a>
-    </b>
-</div>
+    <hr/>
+    <div>
+        <p>למידע עדכני על סעיפי תקציב, העברות תקציביות, והעברות לגופים פרטיים בעזרת תמיכות והתקשרויות - היכנסו לאתר מפתח התקציב: <a href="http://www.obudget.org">obudget.org</a></p>
+        <p>מעוניינים להצטרף אלינו, לקדם שקיפות תקציבית ולעשות את העולם טוב יותר? היכנסו ל<a href="http://www.hasadna.org.il/%D7%94%D7%AA%D7%A0%D7%93%D7%91%D7%95%D7%AA/">כאן</a></p>
+        <p>רוצים לתרום? היכנסו ל<a href="https://www.paypal.com/il/cgi-bin/webscr?cmd=_flow&SESSION=lDEW6En-GYAbzv8cKm8dWBz9I6O7jcRFlHxe1-wUXnWXhlmjrEhahJvHZqa&dispatch=5885d80a13c0db1f8e263663d3faee8d64ad11bbf4d2a5a1a0d303a50933f9b2">כאן</a></p>
+        <p>רוצים לשאול שאלה, לשתף, להתווכח או סתם לקשקש? הצטרפו לדיון התוסס ב<a href="http://forum.hasadna.org.il/c/eknights/13-category">פורום מפתח התקציב</a></p>
+        <p>רוצים לדבר איתנו בפרטי? כתבו לנו ל <a href="mailto:adam@obudget.org">adam@obudget.org</a></p>
+        <p>לפניות בנושא תקשורת ניתן ליצור קשר עם דובר הסדנא לידע ציבורי, ניר הירשמן, בטלפון 050-6205384, או בדוא"ל <a href="mailto:nir@nirshman.com">nir@nirshman.com</a></p>
+    </div>
+
+
+    <div class="share-page">
+        <br> -
+        <b>
+        שתף: &rarr;
+        //
+        <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a>
+        //
+        <a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a>
+        //
+        <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Google+">Google+</a>
+        </b>
+    </div>
 
     {% unless page.categories == empty %}
       <ul class="tag_box inline">
@@ -41,7 +51,7 @@
     {% endunless %}
 
     <hr>
-    
+
     <ul class="pagination">
       {% if page.previous %}
         <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
@@ -59,4 +69,3 @@
     {% include JB/comments %}
   </div>
 </div>
-
