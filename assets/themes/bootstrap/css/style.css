@@ -25,6 +25,10 @@
     -webkit-margin-end: 0px;
     font-weight: bold;
 }
+
+H6 {
+  font-size: 2.5em;
+}
   .navbar .nav {
   float: right; }
 
