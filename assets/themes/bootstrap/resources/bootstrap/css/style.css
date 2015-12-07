@@ -42,10 +42,6 @@ body{
     background-color: #fff;
 }
 
-.navbar-brand {
-	padding: 0px 0px;
-}
-
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: "Alef Hebrew", "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 500;
@@ -80,7 +76,7 @@ h1 small {
 
 .navbar-brand {
     float: Right;
-    padding: 15px 15px;
+    padding: 0px 0px;
     font-size: 18px;
     line-height: 20px;
 	color: #3c4948;
