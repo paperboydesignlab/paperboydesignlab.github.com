@@ -13,6 +13,7 @@
        url(//fonts.gstatic.com/ea/alefhebrew/v4/Alef-Regular.woff) format('woff'),
        url(//fonts.gstatic.com/ea/alefhebrew/v4/Alef-Regular.ttf) format('truetype');
 }
+
 @font-face {
   font-family: 'Alef Hebrew';
   font-style: normal;
@@ -39,6 +40,10 @@ body{
     line-height: 1.428571429;
     color: #3c4948;
     background-color: #fff;
+}
+
+.navbar-brand {
+	padding: 15px 15px;
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
