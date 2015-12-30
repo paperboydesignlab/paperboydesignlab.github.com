@@ -31,6 +31,8 @@ title : RSS Feed
         <ttl>1800</ttl>
 
 {% for post in site.posts %}
+    {% if post.draft %}
+    {% else %}
         <item>
                 <title>{{ post.title }}</title>
                 <description>{{ post.content | xml_escape }}</description>
@@ -38,6 +40,7 @@ title : RSS Feed
                 <guid>{{ site.production_url }}{{ post.id }}</guid>
                 <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
         </item>
+    {% endif %}
 {% endfor %}
 
 </channel>
