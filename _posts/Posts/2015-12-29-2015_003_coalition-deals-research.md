@@ -1,6 +1,5 @@
 ---
 published: true
-draft: true
 title: פיצוח הסכמים קואליציוניים
 layout: post
 tagline: null
