@@ -32,21 +32,21 @@
 
     <link href="{{ ASSET_PATH }}/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{ ASSET_PATH }}/resources/bootstrap/css/style.css" rel="stylesheet">
-    <style media="screen" type="text/css">
-        #message {
-            display: inline-block;
-            min-width: 160px;
-            border: solid 1px black;
-            text-align: center;
-            border-radius: 20px;
-            background-color: #fff;
-            border-color: #ccc;
-            margin: 8px 6px;
-            padding: 6px 10px;
-            color: #555;
-            cursor: pointer;
-        }
-    </style>
+    <!--<style media="screen" type="text/css">-->
+        <!--#message {-->
+            <!--display: inline-block;-->
+            <!--min-width: 160px;-->
+            <!--border: solid 1px black;-->
+            <!--text-align: center;-->
+            <!--border-radius: 20px;-->
+            <!--background-color: #fff;-->
+            <!--border-color: #ccc;-->
+            <!--margin: 8px 6px;-->
+            <!--padding: 6px 10px;-->
+            <!--color: #555;-->
+            <!--cursor: pointer;-->
+        <!--}-->
+    <!--</style>-->
 
     <!--[if lt IE 9]>
       <script src="{{ ASSET_PATH }}/resources/respond/Respond.min.js"></script>
@@ -58,7 +58,7 @@
 
   <body>
     <nav class="navbar navbar-default" role="navigation">
-      <div class="container">
+      <div class="container navbar-block">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -66,22 +66,25 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="{{ HOME_PATH }}"><img src="https://cloud.githubusercontent.com/assets/15155676/11638468/e414a2f6-9d2f-11e5-83ab-d0a8a101ba0d.png" width=163px height=50px></a>
+          <!--<a class="navbar-brand" href="{{ HOME_PATH }}"><img src="https://cloud.githubusercontent.com/assets/15155676/11638468/e414a2f6-9d2f-11e5-83ab-d0a8a101ba0d.png" width=163px height=50px></a>-->
+                  <a class="navbar-brand" href="{{ HOME_PATH }}"><img src="{{ ASSET_PATH }}/resources/logo_blog.png" width=172px height=57x></a>
+
         </div>
 
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav">
               <li class="nav"><a id="message">&nbsp;</a></li>
-            {% assign pages_list = site.pages %}
-            {% assign group = 'navigation' %}
-            {% include JB/pages_list %}
+              <!--<li class="nav"><a href="http://localhost:9000/#spending//2014/en">התקשרויות חדשות</a></li>-->
+              <li class="nav"><a href="http://localhost:9000/#main//2014/en">לאתר מפתח התקציב</a></li>
+            <!--{% assign pages_list = site.pages %}-->
+            <!--{% assign group = 'navigation' %}-->
+            <!--{% include JB/pages_list %}-->
           </ul>
         </div>
       </div>
     </nav>
     <div class="container">
       {{ content }}
-      <hr>
       <footer>
         <p>
           &copy; {{ site.time | date: '%Y' }} {{ site.author.name }}

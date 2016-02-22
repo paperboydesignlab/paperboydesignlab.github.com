@@ -1,6 +1,11 @@
 ---
 published: true
 title: פיצוח הסכמים קואליציוניים
+author: סער אלון ברקת
+day: 29
+month: דצמבר
+year: 2015
+profile: /assets/themes/bootstrap/resources/saar.png
 layout: post
 tagline: null
 ---
