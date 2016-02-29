@@ -1,6 +1,11 @@
 ---
 published: true
 title: "פוסט ראשון: יש לנו בלוג חדש, אתם מוזמנים להצטרף ולעקוב"
+author: סער אלון ברקת
+day: 18
+month: נובמבר
+year: 2015
+profile: /assets/themes/bootstrap/resources/saar.png
 layout: post
 tagline: null
 ---
