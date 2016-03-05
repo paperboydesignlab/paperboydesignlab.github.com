@@ -1,9 +1,0 @@
----
-layout: post
-category : lessons
-tagline: "Supporting tagline"
-tags : [intro, beginner, jekyll, tutorial]
-title : נסיון ראשון
----
-{% include JB/setup %}
-זה נסיון להצגת פוסט. אני מאמין שזה יעבוד מה אתם חושבים?

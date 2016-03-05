@@ -1,48 +1,112 @@
-<div class="page-header">
-  <h1>{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>
+<div class="post-header">
+    <div class="post-header-block">
+        <div class="blogTitel">
+            <h1 class="mainPostTitel">{{ page.title }} {% if page.tagline %}
+                <small>{{page.tagline}}</small>
+                {% endif %}
+            </h1>
+        </div>
+    </div>
 </div>
 
 <div class="row post-full">
-  <div class="col-md-12">
-    <div class="date">
-      <span>{{ page.date | date_to_long_string }}</span>
+    <div class="col-md-12 postText">
+        <!--<div class="date">-->
+        <!--<span>{{ page.date | date_to_long_string }}</span><br/>-->
+        <!--</div>-->
+        <div class="content">
+            {{ content }}
+        </div>
     </div>
-    <div class="content">
-      {{ content }}
-    </div>
+</div>
 
-    {% unless page.categories == empty %}
-      <ul class="tag_box inline">
-        <li><i class="icon-folder-open"></i></li>
-        {% assign categories_list = page.categories %}
-        {% include JB/categories_list %}
-      </ul>
-    {% endunless %}
+<div class="pagination-block">
 
-    {% unless page.tags == empty %}
-      <ul class="tag_box inline">
-        <li><i class="icon-tags"></i></li>
-        {% assign tags_list = page.tags %}
-        {% include JB/tags_list %}
-      </ul>
-    {% endunless %}
-
-    <hr>
-    
     <ul class="pagination">
-      {% if page.previous %}
-        <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
-      {% else %}
-        <li class="prev disabled"><a>&larr; Previous</a></li>
-      {% endif %}
-        <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li>
-      {% if page.next %}
-        <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li>
-      {% else %}
-        <li class="next disabled"><a>Next &rarr;</a>
-      {% endif %}
+
+
+        {% if page.next %}
+        <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">פוסט
+            הבא &larr;</a>
+        </li>
+        {% else %}
+        <li class="next disabled"><a>פוסט הבא &larr;</a>
+            {% endif %}
+
+            <!--<li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li>-->
+
+            {% if page.previous %}
+        <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&rarr;
+            פוסט קודם</a></li>
+        {% else %}
+        <li class="prev disabled"><a>&rarr; פוסט קודם</a></li>
+        {% endif %}
+
+
     </ul>
-    <hr>
-    {% include JB/comments %}
-  </div>
+
+</div>
+
+<div class="share-page">
+    <b>
+        <ul>
+            <li>
+                <a class="hvr-shutter-out-horizontal shareTwitter"
+                   href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.author.twitter }}&related={{ site.author.twitter }}"
+                   rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a>
+            </li>
+            <li>
+                <a class="hvr-shutter-out-horizontal shareFacebook"
+                   href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank"
+                   title="Share on Facebook">Facebook</a>
+            </li>
+            <li>
+                <a class="hvr-shutter-out-horizontal shareGoogle"
+                   href="https://plus.google.com/share?url={{site.production_url}}{{ site.url }}{{ page.url }}"
+                   rel="nofollow" target="_blank" title="Share on Google+">Google+</a>
+            </li>
+        </ul>
+
+    </b>
+</div>
+
+<div class="bottomPost">
+    <div class="bottomPost-block">
+
+
+        <p>למידע עדכני על סעיפי תקציב, העברות תקציביות, והעברות לגופים פרטיים בעזרת תמיכות והתקשרויות - היכנסו לאתר
+            מפתח התקציב: <a href="http://www.obudget.org">obudget.org</a></p>
+        <p>מעוניינים להצטרף אלינו, לקדם שקיפות תקציבית ולעשות את העולם טוב יותר? היכנסו ל<a
+                href="http://www.hasadna.org.il/%D7%94%D7%AA%D7%A0%D7%93%D7%91%D7%95%D7%AA/">כאן</a></p>
+        <p>רוצים לתרום? היכנסו ל<a
+                href="https://www.paypal.com/il/cgi-bin/webscr?cmd=_flow&SESSION=lDEW6En-GYAbzv8cKm8dWBz9I6O7jcRFlHxe1-wUXnWXhlmjrEhahJvHZqa&dispatch=5885d80a13c0db1f8e263663d3faee8d64ad11bbf4d2a5a1a0d303a50933f9b2">כאן</a>
+        </p>
+        <p>רוצים לשאול שאלה, לשתף, להתווכח או סתם לקשקש? הצטרפו לדיון התוסס ב<a
+                href="http://forum.hasadna.org.il/c/eknights/13-category">פורום מפתח התקציב</a>
+            או ב<a href="https://www.facebook.com/hasadna.org.il/">דף הפייסבוק של הסדנא</a>.
+        </p>
+        <p>רוצים לדבר איתנו בפרטי? כתבו לנו ל <a href="mailto:adam@obudget.org">adam@obudget.org</a></p>
+        <p>לפניות בנושא תקשורת ניתן ליצור קשר עם דובר הסדנא לידע ציבורי, ניר הירשמן, בטלפון 050-6205384, או בדוא"ל
+            <a href="mailto:nir@nirshman.com">nir@nirshman.com</a></p>
+
+
+        {% unless page.categories == empty %}
+        <ul class="tag_box inline">
+            <li><i class="icon-folder-open"></i></li>
+            {% assign categories_list = page.categories %}
+            {% include JB/categories_list %}
+        </ul>
+        {% endunless %}
+
+        {% unless page.tags == empty %}
+        <ul class="tag_box inline">
+            <li><i class="icon-tags"></i></li>
+            {% assign tags_list = page.tags %}
+            {% include JB/tags_list %}
+        </ul>
+        {% endunless %}
+
+
+        {% include JB/comments %}
+    </div>
 </div>

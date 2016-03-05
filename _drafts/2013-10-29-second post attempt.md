@@ -1,12 +1,19 @@
 ---
 layout: post
-category : lessons
-tagline: "Supporting tagline"
-tags : [intro, beginner, jekyll, tutorial]
-title : "נסיון שני"
+category: lessons
+tagline: Supporting tagline
+tags: 
+  - intro
+  - beginner
+  - jekyll
+  - tutorial
+title: נסיון שני
+published: false
 ---
+
 {% include JB/setup %}
-נסיון נוסף לפוסט בשביל לראות איך זה נראה כשיש כמה פוסטים
+**נסיון נוסף לפוסט בשביל לראות איך זה נראה כשיש כמה פוסטים**
+
 ואני הולך לכתוב כמה שורות
 קצת כמו לורם איפסום רק לא.
 במקום לורם איפסום, אני אכתוב משהו אקראי:
@@ -49,3 +56,5 @@ title : "נסיון שני"
  
 
 דוד בן-גוריון, דניאל אוסטר, מרדכי בנטוב, יצחק בן-צבי, אליהו ברלין, פריץ ברנשטיין, הרב וולף גולד, מאיר גרבובסקי, יצחק גרינבוים, ד"ר אברהם גרנובסקי, אליהו דובקין, מאיר וילנר-קובנר, זרח ורהפטיג, הרצל ורדי, רחל כהן, הרב קלמן כהנא, סעדיה כובאשי, הרב יצחק מאיר לוין, מאיר דוד לוינשטיין, צבי לוריא, גולדה מאירסון, נחום ניר, צבי סגל, הרב יהודה ליב הכהן פישמן, דוד צבי פנקס, אהרן ציזלינג משה קולודני, אליעזר קפלן, אברהם קצנלסון, פליכס רוזנבליט, דוד רמז, ברל רפטור, מרדכי שטנר, בן-ציון שטרנברג, בכור שיטרית, משה שפירא, משה שרתוק.
+
+<script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 700px; height: 742px;'><noscript><a href='#'><img alt='מספר התקשרויות עם גופים פרטיים 2010-2015 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;te&#47;test1_465&#47;Sheet3&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' width='700' height='742' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='test1_465&#47;Sheet3' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;te&#47;test1_465&#47;Sheet3&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='showVizHome' value='no' /><param name='showTabs' value='y' /><param name='bootstrapWhenNotified' value='true' /></object></div>

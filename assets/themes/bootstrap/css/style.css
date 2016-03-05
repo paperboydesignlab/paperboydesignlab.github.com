@@ -10,7 +10,7 @@
  
 .navbar-brand {
     float: left;
-    padding: 15px 15px;
+    padding: 15px 12px;
     font-size: 118px;
     line-height: 20px;
 }
@@ -24,6 +24,10 @@
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
     font-weight: bold;
+}
+
+H6 {
+  font-size: 1em;
 }
   .navbar .nav {
   float: right; }
